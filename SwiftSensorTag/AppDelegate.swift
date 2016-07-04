@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import Moscapsule
+
+var mqttClient: MQTTClient!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // set MQTT Client Configuration
+        let mqttConfig = MQTTConfig(clientId: "d:dhzllh:IPhone:1111222233334444", host: "dhzllh.messaging.internetofthings.ibmcloud.com", port: 1883, keepAlive: 60)
+        
+        mqttConfig.mqttAuthOpts = MQTTAuthOpts(username: "use-token-auth", password: "FnR9tofpaS&h*KN7s8")
+        
+        mqttConfig.onPublishCallback = {
+            messageId in NSLog("Published (mid=\(messageId))")
+        }
+        
+        mqttConfig.onMessageCallback = {
+            mqttMessage in NSLog("MQTT Message received: payload=\(mqttMessage.payloadString)")
+        }
+        
+        // create new MQTT Connection
+        mqttClient = MQTT.newConnection(mqttConfig)
+        
         return true
     }
     

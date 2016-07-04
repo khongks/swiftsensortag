@@ -17,6 +17,8 @@
 		97E449471A76A91B00AECF47 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E449461A76A91B00AECF47 /* CoreBluetooth.framework */; };
 		97E449491A76AA8E00AECF47 /* SensorTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E449481A76AA8E00AECF47 /* SensorTag.swift */; };
 		97E4494B1A77AD6800AECF47 /* SensorTagTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4494A1A77AD6800AECF47 /* SensorTagTableViewCell.swift */; };
+		A408D0C41D1EB72800538520 /* Moscapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A408D0C31D1EB72800538520 /* Moscapsule.framework */; };
+		CD29E0A2D4BBD42D903EFA28 /* Pods_SwiftSensorTag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A84A9F0F1B3C6AB00B64031 /* Pods_SwiftSensorTag.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		191153F9563F33B9AF9399E9 /* Pods-SwiftSensorTag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSensorTag.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSensorTag/Pods-SwiftSensorTag.debug.xcconfig"; sourceTree = "<group>"; };
+		7A84A9F0F1B3C6AB00B64031 /* Pods_SwiftSensorTag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftSensorTag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9D804AACB80E5B9A78E440 /* Pods-SwiftSensorTag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftSensorTag.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftSensorTag/Pods-SwiftSensorTag.release.xcconfig"; sourceTree = "<group>"; };
 		97E4491E1A76A8EB00AECF47 /* SwiftSensorTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSensorTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E449221A76A8EB00AECF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97E449231A76A8EB00AECF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,9 @@
 		97E449461A76A91B00AECF47 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		97E449481A76AA8E00AECF47 /* SensorTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTag.swift; sourceTree = "<group>"; };
 		97E4494A1A77AD6800AECF47 /* SensorTagTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTagTableViewCell.swift; sourceTree = "<group>"; };
+		A408D0C31D1EB72800538520 /* Moscapsule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moscapsule.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftSensorTag-aflyepcfpxosnzgeywbryfynfiwy/Build/Products/Debug-iphoneos/Moscapsule/Moscapsule.framework"; sourceTree = "<group>"; };
+		A408D0C51D1EF31600538520 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftSensorTag-aflyepcfpxosnzgeywbryfynfiwy/Build/Products/Debug-iphoneos/Freddy/Freddy.framework"; sourceTree = "<group>"; };
+		A408D0C71D1EF4AE00538520 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/SwiftSensorTag-aflyepcfpxosnzgeywbryfynfiwy/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A408D0C41D1EB72800538520 /* Moscapsule.framework in Frameworks */,
 				97E449471A76A91B00AECF47 /* CoreBluetooth.framework in Frameworks */,
+				CD29E0A2D4BBD42D903EFA28 /* Pods_SwiftSensorTag.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56B96A9A1A243B3FB7FE3810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A408D0C71D1EF4AE00538520 /* SwiftyJSON.framework */,
+				A408D0C51D1EF31600538520 /* Freddy.framework */,
+				A408D0C31D1EB72800538520 /* Moscapsule.framework */,
+				7A84A9F0F1B3C6AB00B64031 /* Pods_SwiftSensorTag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A2DE223D39B88B7100D5A47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				191153F9563F33B9AF9399E9 /* Pods-SwiftSensorTag.debug.xcconfig */,
+				7D9D804AACB80E5B9A78E440 /* Pods-SwiftSensorTag.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		97E449151A76A8EB00AECF47 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +102,8 @@
 				97E449201A76A8EB00AECF47 /* SwiftSensorTag */,
 				97E449391A76A8EB00AECF47 /* SwiftSensorTagTests */,
 				97E4491F1A76A8EB00AECF47 /* Products */,
+				8A2DE223D39B88B7100D5A47 /* Pods */,
+				56B96A9A1A243B3FB7FE3810 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97E449401A76A8EB00AECF47 /* Build configuration list for PBXNativeTarget "SwiftSensorTag" */;
 			buildPhases = (
+				B5A44751C81B0412E480E278 /* [CP] Check Pods Manifest.lock */,
 				97E4491A1A76A8EB00AECF47 /* Sources */,
 				97E4491B1A76A8EB00AECF47 /* Frameworks */,
 				97E4491C1A76A8EB00AECF47 /* Resources */,
+				35810039603021DCCA4EA986 /* [CP] Embed Pods Frameworks */,
+				657FD9F0D29A3E466FD7B107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +257,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35810039603021DCCA4EA986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSensorTag/Pods-SwiftSensorTag-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		657FD9F0D29A3E466FD7B107 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftSensorTag/Pods-SwiftSensorTag-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A44751C81B0412E480E278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97E4491A1A76A8EB00AECF47 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -308,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,6 +438,7 @@
 		};
 		97E449411A76A8EB00AECF47 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191153F9563F33B9AF9399E9 /* Pods-SwiftSensorTag.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSensorTag/Info.plist;
@@ -366,6 +450,7 @@
 		};
 		97E449421A76A8EB00AECF47 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9D804AACB80E5B9A78E440 /* Pods-SwiftSensorTag.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftSensorTag/Info.plist;

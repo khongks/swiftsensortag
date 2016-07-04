@@ -1,0 +1,6 @@
+framework module Pods_SwiftSensorTag {
+  umbrella header "Pods-SwiftSensorTag-umbrella.h"
+
+  export *
+  module * { export * }
+}

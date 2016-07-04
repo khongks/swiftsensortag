@@ -220,6 +220,25 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         else if characteristic.UUID == BarometerDataUUID {
             //println("BarometerDataUUID")
         }
+        // Publish to topic iot-2/type/device_type/id/device_id/evt/event_id/fmt/format_string
+        //mqttClient.publishString("{'tempInC':'\(ambientTemperature)'}", topic: "iot-2/type/IPhone/id/1111222233334444/evt/temperature/fmt/json", qos: 0, retain: true)
+        
+        // iot-2/evt/event_id/fmt/format_string
+        //let message = "{'temp':\(self.ambientTemperature),'humid':\(self.relativeHumidity)}"
+        
+        //var message = ["temp": self.ambientTemperature, "humid": self.relativeHumidity]
+        //var jsonData = NSJSONSerialization(message)
+        
+        let message: NSMutableDictionary = NSMutableDictionary()
+        message.setValue(self.ambientTemperature, forKey: "temp")
+        message.setValue(self.relativeHumidity, forKey: "humid")
+        let jsonData = try! NSJSONSerialization.dataWithJSONObject(message, options: NSJSONWritingOptions())
+        let jsonString = NSString(data: jsonData, encoding: NSUTF8StringEncoding) as! String
+        
+        print("publish: \(jsonString)")
+        mqttClient.publishString(jsonString, topic: "iot-2/evt/stag/fmt/json", qos: 0, retain: true)
+        // Publish to topic iot-2/type/device_type/id/device_id/evt/event_id/fmt/format_string
+        //mqttClient.publishString(message, topic: "iot-2/type/IPhone/id/1111222233334444/evt/stag/fmt/json", qos: 0, retain: true)
         
         self.sensorTagTableView.reloadData()
     }
